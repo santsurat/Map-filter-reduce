@@ -1,4 +1,4 @@
-const arr = [5 , 6 , 8 , 9 , 3 , 2, 4 , 7 , 1];
+// const arr = [5 , 6 , 8 , 9 , 3 , 2, 4 , 7 , 1];
 
 
 
@@ -50,12 +50,36 @@ const arr = [5 , 6 , 8 , 9 , 3 , 2, 4 , 7 , 1];
 //     return x > 5 ;
 // }
 
-const lessThan4 = arr.filter((x) =>  x < 4 );
+// const lessThan4 = arr.filter((x) =>  x < 4 );
 
-console.log(lessThan4);
+// console.log(lessThan4);
 
 
-const output = arr.map((x) => x*3);
+// const output = arr.map((x) => x*3);
+
+// console.log(output);
+
+
+// Reduce 
+
+const user = [
+{name : "sant", age : 22},
+{name : "rahul", age : 22},
+{name : "rahul", age : 28},
+{name : "harsh", age : 20},
+{name : "sweta", age : 24},
+];
+
+
+const output = user.reduce(function (acc , user){
+  if(acc[user.name]){
+    (acc[user.name]) = ++ (acc[user.name])
+  }
+  else{
+    (acc[user.name]) = 1
+  }
+  return acc;
+}, {})
 
 console.log(output);
 
